@@ -17,9 +17,56 @@
         <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body class="entire-content">
+<div class="js-menu-container">
+    <button class="js-close-menu">&times;</button>
+    <nav class="nav-menu-container">
+        <ul class="navigation-menu">
+            <li class="header-link">
+                <a href="index.html">Studio</a>
+            </li>
+            <li class="header-link">
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-link">
+                <a href="contacts.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="top-contact-details">
+        <div class="phone-number">
+            <span>
+                <a href="tel:+12127724150"> +1 212 772 4150 </a>
+            </span>
+        </div>
+        <div class="mail-address">
+            <span>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </span>
+        </div>
+    </div>
+
+    <ul class="social-titles">
+        <li>Instagram</li>
+        <span class="break-line"></span>
+        <li>Twitter</li>
+        <span class="break-line"></span>
+        <li>Facebook</li>
+        <span class="break-line"></span>
+        <li>LinkedIn</li>
+    </ul>
+</div>
+
     <div class="container">
+        <!-- Menu toggle for mobile -->
+    
     <!--Header-->
-    <header class="first-section">      
+    <header class="first-section">
+        <button class="menu-section js-open-menu">
+            <svg>
+                <use href="./images/icons/icons.svg#icon-menu-40px-optimised" width="40px"></use>
+            </svg>
+        </button>
 <a class="web-studio" href="./index.html" > <span class="web-logo">Web</span>Studio</a>
 <nav class="navigation-list">
     <ul class="list">
@@ -107,17 +154,20 @@
             <h2 class="do-title">What we do</h2>
         <div class="do-fields">
             <div class="first-image-content">
-                <img class="desktop-apps" src="./images/box1squoosh.jpg" alt="Web sites" width="370" height="294">
+                <img class="desktop-apps" srcset="./images/box1@1x.jpg 370w, ./images/box1@2x.jpg 740w"
+                src="./images/box1@1x.jpg" alt="Web sites" width="370" height="294" sizes="370px">
                 <div class="overlay1">DESKTOP APPS</div>
             </div>
         
             <div class="second-image-content">
         
-                <img class="mobile-apps" src="./images/box2squoosh.jpg" alt="Phone apps" width="370" height="294">
+                <img class="mobile-apps" srcset="./images/box2@1x.jpg 370w, ./images/box2@2x.jpg 740w"
+                src="./images/box2@1x.jpg" alt="Phone apps" width="370" height="294" sizes="370px">
                 <div class="overlay2">MOBILE APPS</div>
             </div>
             <div class="third-image-content">
-                <img class="design-solutions" src="./images/box3squoosh.jpg" alt="Graphic design" width="370" height="294">
+                <img class="design-solutions" srcset="./images/box3@1x.jpg 370w, ./images/box3@2x.jpg 740w"
+                src="./images/box3@1x.jpg" alt="Graphic design" width="370" height="294" sizes="370px">
                 <div class="overlay3">DESIGN SOLUTIONS</div>
             </div>
         </div>
@@ -132,7 +182,18 @@
             <h2 class="our-team-title">Our Team</h2>
                    <!--Card 1-->
                     <div class="employes">
-                    <img src="./images/christopherwalker-squoosh.jpg" alt="Christopher Walker" width="270" height="260" />
+                        <picture>
+                            <!--Desktop card employes-->
+                            <source media="(min-width:1158px)" srcset="./images/christopherwalker@1x.jpg 1x, ./images/christopherwalker@2x.jpg 2x" />  
+                            <!--Tablet card employes-->
+                            <source media="(min-width:768px)"
+                                srcset="./images/christopherwalker-tablet@1x.jpg 1x, ./images/christopherwalker-tablet@2x.jpg 2x" />
+                            <!--Mobile card employes-->
+                            <source media="(min-width:480px)"
+                                srcset="./images/christopherwalker-mobile@1x.jpg 1x, ./images/christopherwalker-mobile@2x.jpg 2x" />
+                            <img src="./images/christopherwalker@1x.jpg" alt="Christopher Walker" width="270" height="260" />
+                            
+                        </picture>
                       <p class="name">Christopher Walker</p>
                       <p class="ocupation">Product Designer</p>
 
@@ -160,7 +221,18 @@
                     </div>
                     <!--Card 2-->
                     <div class="employes">
-                     <img src="./images/kylieevans-squoosh.jpg" alt="Kylie Evans" width="270" height="260" />
+                        <picture>
+                            <!--Desktop card employes-->
+                            <source media="(min-width:1158px)" srcset="./images/kylieevans@1x.jpg 1x, ./images/kylieevans@2x.jpg 2x" />
+                            <!--Tablet card employes-->
+                            <source media="(min-width:768px)"
+                                srcset="./images/kylieevans-tablet@1x.jpg 1x, ./images/kylieevans-tablet@2x.jpg 2x" />
+                            <!--Mobile card employes-->
+                            <source media="(min-width:480px)"
+                                srcset="./images/kylieevans-mobile@1x.jpg 1x, ./images/kylieevans-mobile@2x.jpg 2x" />
+                            <img src="./images/kylieevans@1x.jpg" alt="Kylie Evans" width="270" height="260" />
+                        
+                        </picture>
                       <p class="name">Kylie Evans</p>
                       <p class="ocupation" >Frontend Developer</p>
                     <ul class="social-icons-employes">
@@ -187,7 +259,16 @@
                     </div>
                     <!--Card 3-->
                     <div class="employes">
-                     <img src="./images/ryanharris-squoosh.jpg" alt="Ryan Harris" width="270" height="260" />
+                        <picture>
+                            <!--Desktop card employes-->
+                            <source media="(min-width:1158px)" srcset="./images/ryanharris@1x.jpg 1x, .images/ryanharris@2x.jpg 2x" />
+                            <!--Tablet card employes-->
+                            <source media="(min-width:768px)" srcset="./images/ryanharris-tablet@1x.jpg 1x, ./images/ryanharris-tablet@2x.jpg 2x" />
+                            <!--Mobile card employes-->
+                            <source media="(min-width:480px)" srcset="./images/ryanharris-mobile@1x.jpg 1x, ./images/ryanharris-mobile@2x.jpg 2x" />
+                            <img src="./images/ryanharris@1x.jpg" alt="Ryan Harris" width="270" height="260" />
+                        
+                        </picture>
                         <p class="name">Ryan Harris</p>
                         <p class="ocupation">Marketing</p>
                         <ul class="social-icons-employes">
@@ -214,7 +295,16 @@
                     </div>
                     <!--Card 4-->
                     <div class="employes">
-                     <img src="./images/tylermoore-squoosh.jpg" alt="Tyler Moore" width="270" height="260" />
+                        <picture>
+                            <!--Desktop card employes-->
+                            <source media="(min-width:1158px)" srcset="./images/tylermoore@1x.jpg 1x, ./images/tylermoore@2x.jpg 2x" />
+                            <!--Tablet card employes-->
+                            <source media="(min-width:768px)" srcset="./images/tylermoore-tablet@1x.jpg 1x, ./images/tylermoore-tablet@2x.jpg 2x" />
+                            <!--Mobile card employes-->
+                            <source media="(min-width:480px)" srcset="./images/tylermoore-mobile@1x.jpg 1x, ./images/tylermoore-mobile@2x.jpg 2x" />
+                            <img src="./images/tylermoore@1x.jpg" alt="Tyler Moore" width="270" height="260" />
+                        
+                        </picture>
                        <p class="name">Tyler Moore</p>
                      <p class="ocupation">UI Designer</p>
                     <ul class="social-icons-employes">
@@ -368,7 +458,7 @@
             </label>
             <label class="modal-form__position">
                 Telefon
-                <input type="tel" name="userphone" class="modal-form__input" />
+                <input type="number" name="userphone" class="modal-form__input" />
                 <svg width="12px" height="12px">
                     <use href="./images/icons/icons.svg#icon-phone-black"></use>
                 </svg>
@@ -399,7 +489,9 @@
         </form>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.0.3/bodyScrollLock.min.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 
-<script src="./modal.js"></script>
 </body>
 </html>
