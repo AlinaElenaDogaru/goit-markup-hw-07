@@ -929,6 +929,14 @@ fill: var(--blue);
 
 /*Mobile first*/
 
+@media screen and (max-width:428px) {
+ 
+.benefits .benefits-list svg {
+    max-width: 300px;
+}
+    
+}
+
 @media screen and (max-width: 768px) {
     body {
         margin: 0;
