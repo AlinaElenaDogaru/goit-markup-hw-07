@@ -15,8 +15,6 @@
     --normal-font-size: 14px;
     --middle-font-size: 16px;
     --main-font: "Roboto" sans-serif;
-
-
 }
 
 picture { max-width: 100%;
@@ -100,7 +98,6 @@ a {
     border-width: 1px;
     position: relative;
     
-
 }
 .title-section {
     display: flex;
@@ -111,9 +108,6 @@ a {
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image@1x.jpg);
     background-repeat: no-repeat;
     
-    
-
-
 }
 .main-title {
     color: var(--white);
@@ -662,8 +656,6 @@ fill: var(--blue);
     
     white-space: nowrap;
    
-
-
 }
 
 .find-us-on {
@@ -861,8 +853,6 @@ fill: var(--blue);
 
 }
 
-
-
 .projects {
     font-weight: 700;
     font-size: 18px;
@@ -930,11 +920,31 @@ fill: var(--blue);
 /*Mobile first*/
 
 @media screen and (max-width:428px) {
+    .js-menu-container {
+        margin-left: 0px;
+        padding: 20px 0;
+    }
  
 .benefits .benefits-list svg {
     max-width: 300px;
 }
-    
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    flex-shrink: 1;
+
+}
+ .benefits {
+     max-width: 765px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     overflow-wrap: normal;
+     margin-left: 30px;
+ }
 }
 
 @media screen and (max-width: 768px) {
@@ -1031,8 +1041,7 @@ margin: 0 15px;}
     line-height: 1.2;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-    font-family: var(--main-font);
-    
+    font-family: var(--main-font);   
 }
 .employes {
     
@@ -1052,7 +1061,6 @@ margin: 0 15px;}
     flex-wrap: wrap;
     justify-content:center;
     text-align: center;
-
 }
 
 .customer-title {
@@ -1067,9 +1075,7 @@ margin: 0 15px;}
     border-width: 1px;
     border-radius: 4px;
     justify-content: center;
-    padding: 16px 52px;
-    
-
+    padding: 16px 52px;   
 }
 
 .icon-element {
@@ -1121,21 +1127,6 @@ margin: 0 15px;}
 
  }
   
-/* .section {
-    width: 1600px;
-    margin: 0 0;
-    padding: 94px 0;
-}
-
-.container {
-    width: 1200px;
-    margin: 0;
-} */
-
-/* Body global*/
-
-
-
         /*Tablet design*/
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1185,7 +1176,7 @@ margin: 0 15px;}
                       }
     
 
-        .first-section .navigation-list .list {
+ .first-section .navigation-list .list {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -1193,13 +1184,13 @@ margin: 0 15px;}
             align-items: center;
         }
     
-        .list .list-element a {
+  .list .list-element a {
             display: flex;
             flex-direction: row;
             margin-right: 45px;
             margin-left: 35px;
         }
-     .first-link {
+  .first-link {
              margin-right: 20px;
                 }
    
@@ -1288,7 +1279,6 @@ margin: 0 15px;}
 
     }
     
-
     .web-logo {
         color: var(--blue);
     }
@@ -1303,7 +1293,7 @@ margin: 0 15px;}
                     flex-shrink: 1;
                 }
     
-     @media (min-device-pixel-ratio: 2),
+ @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -1386,8 +1376,6 @@ li .link:visited {
 .navigation-list .list-element:visited::after {
     width: 100%;
 }
-
- 
 
 /*Regular customer section*/
 .customers {
@@ -1546,8 +1534,6 @@ li .link:visited {
     line-height: 1.2;
 }
 
-
-
 .our-team>.section {
     background-color: var(--button-grey);
     display: inline-block;
@@ -1583,8 +1569,6 @@ li .link:visited {
     margin-top: 50px;
 
 }
-
-
 
 .employes:last-child {
     margin-right: 0px;
@@ -1634,8 +1618,6 @@ li .link:visited {
     width: 100%;
     position: relative;
 }
-
-
 
 .web-studio-light {
     font-family: "Raleway";
